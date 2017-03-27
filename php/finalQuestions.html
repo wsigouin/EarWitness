@@ -1,0 +1,268 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Earwitness Study</title>
+  <meta name="description" content="">
+  <meta name="author" content="William Sigouin">
+  <script src= "../js/jquery-3.1.1.min.js"></script>
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+
+
+  <script src= "../js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class = "navbar">
+    <p> Earwitness Survey </p>
+  </div>
+  <div class = "main">
+    <div class= "middle">
+      <form method="post" onsubmit="final.html">
+    <div class="form-group" id="div_q1">
+     <label class="control-label requiredField" for="q1">
+      1. When listening to the audiotape, did you attempt to remember the voice?
+      <span class="asteriskField">
+       *
+      </span>
+     </label>
+     <div class="">
+      <label class="radio-inline">
+       <input name="q1" type="radio" value="Yes"/>
+       Yes
+      </label>
+      <label class="radio-inline">
+       <input name="q1" type="radio" value="No"/>
+       No
+      </label>
+     </div>
+    </div>
+    <div class="form-group ">
+     <label class="control-label ">
+      2. If you did attempt to remember the voice, what technique(s) did you use? CHECK ALL THAT APPLY.
+     </label>
+     <div class=" ">
+      <div class="checkbox">
+       <label class="checkbox">
+         <input name="q2" type="checkbox" value="a. I tried to notice the emotional tone of the voice"/>
+        a. I tried to notice the emotional tone of the voice
+       </label>
+
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q2" type="checkbox" value="b. I tried to notice the tone (frequency) of the voice"/>
+        b. I tried to notice the tone (frequency) of the voice
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q2" type="checkbox" value="c. I tried to notice other characteristics of the voice (e.g., pace, accent)"/>
+        c. I tried to notice other characteristics of the voice (e.g., pace, accent)
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q2" type="checkbox" value="d. I tried to associate the voice with someone I know"/>
+        d. I tried to associate the voice with someone I know
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q2" type="checkbox" value="e. I tried to describe the voice in words to myself"/>
+        e. I tried to describe the voice in words to myself
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q2" type="checkbox" value="f. Other (explain or describe)"/>
+        f. Other (explain or describe)
+       </label>
+      </div>
+     </div>
+    </div>
+    <div class="form-group ">
+     <label class="control-label " for="q3">
+      If you checked c or f in the previous question, please provide an explanation below:
+     </label>
+     <textarea class="form-control" cols="40" id="q3" name="q3" rows="10"></textarea>
+    </div>
+    <div class="form-group" id="div_radio2">
+     <label class="control-label " for="radio2">
+      3. When listening to the audiotape, did you attempt to remember the content
+of the audiotape?
+     </label>
+     <div class="">
+      <label class="radio-inline">
+       <input name="radio2" type="radio" value="Yes"/>
+       Yes
+      </label>
+      <label class="radio-inline">
+       <input name="radio2" type="radio" value="No"/>
+       No
+      </label>
+     </div>
+    </div>
+    <div class="form-group ">
+     <label class="control-label ">
+      4. If you did attempt to remember the content, what technique(s) did you use?
+CHECK ALL THAT APPLY.
+     </label>
+     <div class=" ">
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q4" type="checkbox" value="a. I tried to notice the emotional tone of the voice"/>
+        a. I tried to notice the emotional tone of the voice
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q4" type="checkbox" value="b. I tried to notice what was being said and remember it verbatim"/>
+        b. I tried to notice what was being said and remember it verbatim
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q4" type="checkbox" value="c. I tried to notice what was being said and remember the ideas"/>
+        c. I tried to notice what was being said and remember the ideas
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q4" type="checkbox" value="d. I tried to notice what was being said and remember only the key facts"/>
+        d. I tried to notice what was being said and remember only the key facts
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q4" type="checkbox" value="e. I tried to picture in my mind what was being described"/>
+        e. I tried to picture in my mind what was being described
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q4" type="checkbox" value="f. Other (explain or describe) "/>
+        f. Other (explain or describe)
+       </label>
+      </div>
+     </div>
+    </div>
+    <div class="form-group ">
+     <label class="control-label " for="q4explain">
+      If you chose e for the previous question, please provide an explanation below:
+     </label>
+     <textarea class="form-control" cols="40" id="q4explain" name="q4explain" rows="10"></textarea>
+    </div>
+    <div class="form-group ">
+     <label class="control-label ">
+      5. What information or technique(s) did you use during the identification test to help you identify the target voice?
+     </label>
+     <div class=" ">
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q5" type="checkbox" value="a. I used the frequency of the voice"/>
+        a. I used the frequency of the voice
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q5" type="checkbox" value="b. I used the emotional tone of the voice"/>
+        b. I used the emotional tone of the voice
+       </label>
+      </div>
+      <div class="checkbox">
+       <label class="checkbox">
+        <input name="q5" type="checkbox" value="c. I used other characteristics of the voice"/>
+        c. I used other characteristics of the voice
+       </label>
+      </div>
+     </div>
+    </div>
+    <div class="form-group ">
+     <label class="control-label " for="textarea2">
+      If you chose c in the previous question, please provide an explanation below:
+     </label>
+     <textarea class="form-control" cols="40" id="textarea2" name="textarea2" rows="10"></textarea>
+    </div>
+    <div class="form-group ">
+     <label class="control-label ">
+      6. Did you find the target voice to be?  (choose one)
+     </label>
+     <div class="">
+      <div class="radio">
+       <label class="radio">
+        <input name="q6" type="radio" value="a. very typical of voices in this region"/>
+        a. very typical of voices in this region
+       </label>
+      </div>
+      <div class="radio">
+       <label class="radio">
+        <input name="q6" type="radio" value="b. somewhat typical of voices in this region"/>
+        b. somewhat typical of voices in this region
+       </label>
+      </div>
+      <div class="radio">
+       <label class="radio">
+        <input name="q6" type="radio" value="c. somewhat atypical of voices in this region"/>
+        c. somewhat atypical of voices in this region
+       </label>
+      </div>
+      <div class="radio">
+       <label class="radio">
+        <input name="q6" type="radio" value="d. very atypical of voices in this region"/>
+        d. very atypical of voices in this region
+       </label>
+      </div>
+     </div>
+    </div>
+    <div class="form-group ">
+     <label class="control-label ">
+      7. Would you describe the target voice as being the same accent as yours?
+     </label>
+     <div class="">
+      <div class="radio">
+       <label class="radio">
+        <input name="q7" type="radio" value="Yes"/>
+        Yes
+       </label>
+      </div>
+      <div class="radio">
+       <label class="radio">
+        <input name="q7" type="radio" value="No"/>
+        No
+       </label>
+      </div>
+     </div>
+    </div>
+    <div class="form-group ">
+     <label class="control-label " for="q8i">
+      8. Please mention three things you remember hearing in the audiotape
+     </label>
+     <input class="form-control" id="q8i" name="q8i" type="text"/>
+    </div>
+    <div class="form-group ">
+     <input class="form-control" id="text1" name="text1" type="text"/>
+    </div>
+    <div class="form-group ">
+     <input class="form-control" id="q8iii" name="q8iii" type="text"/>
+    </div>
+    <div class="form-group">
+     <div>
+     </div>
+    </div>
+   </form>
+   <a href="final.html"><button type="button" class="btn btn-success" >Continue</button></a>
+
+   </div>
+ </div>
+
+
+
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
