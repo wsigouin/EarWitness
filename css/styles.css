@@ -47,3 +47,18 @@ body{
 .form-horizontal{
   width: 100%;
 }
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+.form-group{
+    text-align: left;
+}
+#indexForm{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
