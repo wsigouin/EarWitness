@@ -1,52 +1,5 @@
 <?php
 session_start();
-$code = $_POST["codeInput"];
-$_SESSION["code"] = $code;
-$_SESSION["invalid"] = false;
-$_SESSION["name"] = $_POST["nameInput"];
-
-if($code[0] == "V"){
-    $_SESSION["instructions"] = "attend to the following voice.";
-}
-else if($code[0] == "C"){
-    $_SESSION["instructions"] = "listen to the following audiotape.";
-}
-else{
-    $_SESSION["invalid"] = true;
-    header("Location: ../index.php");
-}
-
-$_SESSION["length"] = $code[1];
-
-if(!($_SESSION["length"] == "3" || $_SESSION["length"] == "4")){
-    $_SESSION["invalid"] = true;
-    header("Location: ../index.php");
-}
-
-$_SESSION["target"] = $code[2];
-
-if(!($_SESSION["target"] == "A" || $_SESSION["target"] == "B")){
-    $_SESSION["invalid"] = true;
-    header("Location: ../index.php");
-}
-
-$_SESSION["position"] = $code[3];
-
-if(!($_SESSION["position"] == "2" || $_SESSION["position"] == "3" || $_SESSION["position"] == "1" || $_SESSION["position"] == "4")){
-    $_SESSION["invalid"] = true;
-    header("Location: ../index.php");
-}
-
-$_SESSION["gender"] = $code[4];
-
-if(!($_SESSION["gender"] == "M" || $_SESSION["gender"] == "F")){
-    $_SESSION["invalid"] = true;
-    header("Location: ../index.php");
-}
-
-$_SESSION["number"] = substr(5, strlen($code)- 6);
-$_SESSION["attempts"] = 0;
-
 ?>
 <!doctype html>
 
@@ -69,7 +22,7 @@ $_SESSION["attempts"] = 0;
 
 <body>
   <div class = "navbar">
-    <p> Earwitness Survey </p>
+    <p> EarWitness Survey </p>
   </div>
   <div class = "mainindex">
     <div class= "middle">

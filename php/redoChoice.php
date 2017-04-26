@@ -1,15 +1,22 @@
 <?php
-    if($_SESSION["answer3"]){
-        $_SESSION["answer4"] = $_POST["choiceRadio"];
-    }
-    else if($_SESSION["answer2"]){
-        $_SESSION["answer3"] = $_POST["choiceRadio"];
-    }
-    else if($_SESSION["answer1"]){
-        $_SESSION["answer2"] = $_POST["choiceRadio"];
-    }
-    else{
+    session_start();
+    $_SESSION["attempts"] += 1;
+
+    if($_SESSION["attempts"] == 1){
         $_SESSION["answer1"] = $_POST["choiceRadio"];
+        $_SESSION["confidence1"] = $_POST["pointsChoice"];
+    }
+    else if($_SESSION["attempts"] == 2){
+        $_SESSION["answer2"] = $_POST["choiceRadio"];
+        $_SESSION["confidence2"] = $_POST["pointsChoice"];
+    }
+    else if($_SESSION["attempts"] == 3){
+        $_SESSION["answer3"] = $_POST["choiceRadio"];
+        $_SESSION["confidence3"] = $_POST["pointsChoice"];
+    }
+    else {
+        $_SESSION["answer4"] = $_POST["choiceRadio"];
+        $_SESSION["confidence4"] = $_POST["pointsChoice"];
     }
 ?>
 <!doctype html>

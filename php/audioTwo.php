@@ -3,7 +3,7 @@ session_start();
 if($_SESSION["attempts"] == 0) {
     $_SESSION["confidence"] = array($_POST["minutesRadio"], $_POST["confidenceMinRange"], $_POST["weekRadio"], $_POST["confidenceWeekRange"], $_POST["twoRadio"], $_POST["confidenceTwoRange"]);
 }
-$_SESSION["attempts"] += 1;
+
 ?>
 <!doctype html>
 
@@ -11,7 +11,7 @@ $_SESSION["attempts"] += 1;
 <head>
   <meta charset="utf-8">
 
-  <title>Earwitness Study</title>
+  <title>EarWitness Study</title>
   <meta name="description" content="">
   <meta name="author" content="William Sigouin">
   <script src= "../js/jquery-3.1.1.min.js"></script>
@@ -31,8 +31,12 @@ $_SESSION["attempts"] += 1;
   <div class = "mainindex">
     <div class= "middle">
       <p>Please interact with the audio elements below to listen to the voice clips.</p>
-      <p>Once you have listened to them all, attempt to commit their order to memory, then proceed by pressing continue.</p>
-        <p>Listen to each of the audiotapes <u>at least one time</u> before proceeding.</p>
+        <?php
+        if($_SESSION["attempts"] == 0) {
+           echo "<p> Once you have listened to them all, attempt to commit their order to memory, then proceed by pressing continue.</p >
+        <p> Listen to each of the audiotapes <u>at least one time</u> before proceeding .</p>";
+        }
+        ?>
 
         <br>
       <label for="audio1">Audio Clip One </label>

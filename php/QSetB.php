@@ -22,11 +22,10 @@ session_start();
 
 <body>
   <div class = "navbar">
-    <p> Earwitness Survey </p>
+    <p> EarWitness Survey </p>
   </div>
   <div class = "main">
     <div class= "middle">
-      <p> Do you think you could identify the voice you just heard (the target voice) if you heard it again:</p>
 
       <form action = "redoChoice.php" method = "POST">
         <div class="form-group">
@@ -62,7 +61,7 @@ session_start();
           <div class="form-group">
 
             <label for="pointsChoice">How confident are you? (0-100%)</label>
-            <input type="text" name="pointsChoice" id="pointsChoice"/>
+            <input type="text" name="pointsChoice" id="pointsChoice" autocomplete="off"/>
           </div>
           <div class="form-group">
             <button type="submit" id="submit" name="submit" class="btn btn-primary">Continue</button>
